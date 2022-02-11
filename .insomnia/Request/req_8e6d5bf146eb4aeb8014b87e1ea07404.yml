@@ -1,0 +1,53 @@
+_id: req_8e6d5bf146eb4aeb8014b87e1ea07404
+type: Request
+parentId: fld_9f1db351020f479bb28ccddc63788878
+modified: 1644598105012
+created: 1644589753418
+url: "{{ _.api }}/auth/logins"
+name: Login
+description: |-
+  Response 
+
+  Success:
+  ```json
+  {
+  	"status": true,
+  	"message": "User created successfully",
+  	"data": {
+  		"token": "8|4AiR9Y6Rss4TUQRaEE0m9XSGCsyzkb1BY9NAzB4m"
+  	}
+  }
+  ```
+
+  Error:
+  ```json
+  {
+  	"status": false,
+  	"message": "Errror to login",
+  	"errors": [
+  		'The password is blank'
+  	]
+  }
+  ```
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"username": "Daisy.Schumm92",
+    	"password": "{% hash 'sha1', 'hex', 'password' %}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_aaf6add80c194099bc6a5e32d9c2efa2
+authentication: {}
+metaSortKey: -1644589753418
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

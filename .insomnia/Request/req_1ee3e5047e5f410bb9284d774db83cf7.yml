@@ -1,0 +1,50 @@
+_id: req_1ee3e5047e5f410bb9284d774db83cf7
+type: Request
+parentId: fld_9f1db351020f479bb28ccddc63788878
+modified: 1644597778915
+created: 1644589762014
+url: "{{ _.api }}/auth/signup"
+name: Register
+description: |-
+  Response 
+  Success:
+  ```json
+  {
+  	"status": true,
+  	"message": "User created successfully"
+  }
+  ```
+  Bad Request:
+  ```json
+  {
+  	"status": false,
+  	"message": "Error to create the user",
+  	"errors": [
+  		'The name only allow letters'
+  	]
+  }
+  ```
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"name": "{% faker 'name', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'en' %}",
+    	"lastname": "{% faker 'name', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'en' %}",
+    	"username": "{% faker 'internet', '', '', '', '', '', '', '', '', 'userName', '', '', '', '', '', '', 'en' %}",
+    	"password": "{% hash 'sha1', 'hex', 'password' %}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3eb9c509df4d498fb1a7526e4ede5789
+authentication: {}
+metaSortKey: -1644589753468
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
