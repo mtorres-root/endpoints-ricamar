@@ -1,7 +1,7 @@
 _id: req_1ee3e5047e5f410bb9284d774db83cf7
 type: Request
 parentId: fld_9f1db351020f479bb28ccddc63788878
-modified: 1644597778915
+modified: 1644601921796
 created: 1644589762014
 url: "{{ _.api }}/auth/signup"
 name: Register
@@ -32,7 +32,8 @@ body:
     	"name": "{% faker 'name', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'en' %}",
     	"lastname": "{% faker 'name', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'en' %}",
     	"username": "{% faker 'internet', '', '', '', '', '', '', '', '', 'userName', '', '', '', '', '', '', 'en' %}",
-    	"password": "{% hash 'sha1', 'hex', 'password' %}"
+    	"password": "{% hash 'sha1', 'hex', 'password' %}",
+    	"password_confirmation": "{% hash 'sha1', 'hex', 'password' %}"
     }
 parameters: []
 headers:
