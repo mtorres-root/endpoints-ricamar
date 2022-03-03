@@ -1,10 +1,10 @@
 _id: req_1ee3e5047e5f410bb9284d774db83cf7
 type: Request
-parentId: fld_9f1db351020f479bb28ccddc63788878
-modified: 1644601921796
+parentId: fld_494eb4abec8149f6ab205b38106029b9
+modified: 1646334525432
 created: 1644589762014
 url: "{{ _.api }}/auth/signup"
-name: Register
+name: Register Single User
 description: |-
   Response 
   Success:
@@ -30,10 +30,13 @@ body:
   text: >-
     {
     	"name": "{% faker 'name', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'en' %}",
-    	"lastname": "{% faker 'name', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'en' %}",
+    	"last_name": "{% faker 'name', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'en' %}",
     	"username": "{% faker 'internet', '', '', '', '', '', '', '', '', 'userName', '', '', '', '', '', '', 'en' %}",
     	"password": "{% hash 'sha1', 'hex', 'password' %}",
-    	"password_confirmation": "{% hash 'sha1', 'hex', 'password' %}"
+    	"password_confirmation": "{% hash 'sha1', 'hex', 'password' %}",
+    	"roles": [
+    		1
+    	]
     }
 parameters: []
 headers:
@@ -41,7 +44,7 @@ headers:
     value: application/json
     id: pair_3eb9c509df4d498fb1a7526e4ede5789
 authentication: {}
-metaSortKey: -1644589753468
+metaSortKey: -1645242510327.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

@@ -1,9 +1,9 @@
 _id: req_8e6d5bf146eb4aeb8014b87e1ea07404
 type: Request
 parentId: fld_9f1db351020f479bb28ccddc63788878
-modified: 1644600564545
+modified: 1646334526630
 created: 1644589753418
-url: "{{ _.api }}/auth/logins"
+url: "{{ _.api }}/auth/login"
 name: Login
 description: |-
   Response 
@@ -34,7 +34,7 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"username": "Daisy.Schumm92",
+    	"username": "salma62@example.net",
     	"password": "{% hash 'sha1', 'hex', 'password' %}"
     }
 parameters: []
@@ -43,7 +43,7 @@ headers:
     value: application/json
     id: pair_aaf6add80c194099bc6a5e32d9c2efa2
 authentication: {}
-metaSortKey: -1644589753418
+metaSortKey: -1644606393535
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
