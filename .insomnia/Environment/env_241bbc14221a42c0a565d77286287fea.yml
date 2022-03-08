@@ -1,0 +1,14 @@
+_id: env_241bbc14221a42c0a565d77286287fea
+type: Environment
+parentId: env_e0155209a9cf15f0f7f425841a7eabe7375034d0
+modified: 1646406117396
+created: 1646406094792
+name: Production
+data:
+  host: 172.16.12.142
+dataPropertyOrder:
+  "&":
+    - host
+color: "#1e00ff"
+isPrivate: false
+metaSortKey: 1644248564855.5
