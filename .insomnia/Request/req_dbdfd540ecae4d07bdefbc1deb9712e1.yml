@@ -1,0 +1,28 @@
+_id: req_dbdfd540ecae4d07bdefbc1deb9712e1
+type: Request
+parentId: fld_e97bf5e874864cdea462884c2d95780d
+modified: 1646750642673
+created: 1646750037294
+url: "{{ _.api }}/setting/branch-offices"
+name: Get Branch Offices
+description: ""
+method: GET
+body: {}
+parameters: []
+headers:
+  - id: pair_12e4ed474cb940fe9462a18be8dd5aa6
+    name: Country-Id
+    value: "1"
+    description: ""
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_d0b880742b90459797a85862ed5f505d',
+    'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
+metaSortKey: -1646026492009
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

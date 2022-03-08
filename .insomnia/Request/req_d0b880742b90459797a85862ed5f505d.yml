@@ -1,0 +1,30 @@
+_id: req_d0b880742b90459797a85862ed5f505d
+type: Request
+parentId: fld_e97bf5e874864cdea462884c2d95780d
+modified: 1646750652323
+created: 1646749853028
+url: "{{ _.api }}/setting/auth"
+name: Auth - Override info
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"username": "omar38@example.org",
+    	"password": "password"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_2811b658260f470c996ea3d1932c61b1
+authentication: {}
+metaSortKey: -1646749853028
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
