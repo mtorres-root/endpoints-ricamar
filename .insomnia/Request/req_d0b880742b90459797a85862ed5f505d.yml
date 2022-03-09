@@ -1,7 +1,7 @@
 _id: req_d0b880742b90459797a85862ed5f505d
 type: Request
 parentId: fld_e97bf5e874864cdea462884c2d95780d
-modified: 1646750652323
+modified: 1646848891217
 created: 1646749853028
 url: "{{ _.api }}/setting/auth"
 name: Auth - Override info
@@ -12,7 +12,7 @@ body:
   text: |-
     {
     	"username": "omar38@example.org",
-    	"password": "password"
+    	"password": "{% hash 'sha1', 'hex', 'password' %}"
     }
 parameters: []
 headers:
