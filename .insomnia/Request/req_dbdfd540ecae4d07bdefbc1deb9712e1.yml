@@ -1,19 +1,15 @@
 _id: req_dbdfd540ecae4d07bdefbc1deb9712e1
 type: Request
 parentId: fld_e97bf5e874864cdea462884c2d95780d
-modified: 1646848931069
+modified: 1646923501592
 created: 1646750037294
-url: "{{ _.api }}/setting/branch-offices"
+url: "{{ _.api }}/setting/branch-offices/16"
 name: Get Branch Offices
 description: ""
 method: GET
 body: {}
 parameters: []
-headers:
-  - id: pair_12e4ed474cb940fe9462a18be8dd5aa6
-    name: Country-Id
-    value: "1"
-    description: ""
+headers: []
 authentication:
   type: bearer
   token: "{% response 'body', 'req_d0b880742b90459797a85862ed5f505d',
