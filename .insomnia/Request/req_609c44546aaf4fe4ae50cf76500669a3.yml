@@ -1,10 +1,10 @@
-_id: req_8e6d5bf146eb4aeb8014b87e1ea07404
+_id: req_609c44546aaf4fe4ae50cf76500669a3
 type: Request
 parentId: fld_9f1db351020f479bb28ccddc63788878
-modified: 1647015886902
-created: 1644589753418
-url: "{{ _.api }}/auth/login"
-name: Login
+modified: 1647015890537
+created: 1647015523965
+url: "{{ _.api }}/auth/check-box-active"
+name: Check Box authorization
 description: |-
   Response 
 
@@ -34,16 +34,19 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"username": "ona.rodrigo@example.com",
-    	"password": "{% hash 'sha1', 'hex', 'password' %}"
+    	"branch_office_id": "1",
+    	"branch_box_id": "2"
     }
 parameters: []
 headers:
   - name: Content-Type
     value: application/json
     id: pair_aaf6add80c194099bc6a5e32d9c2efa2
-authentication: {}
-metaSortKey: -1644606393535
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
+    'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
+metaSortKey: -1644606393510
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
