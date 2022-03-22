@@ -1,7 +1,7 @@
 _id: req_3651b6b345ce4217bcbb9f2afcf7f31a
 type: Request
 parentId: fld_9f1db351020f479bb28ccddc63788878
-modified: 1647015962365
+modified: 1647974263249
 created: 1647015926775
 url: "{{ _.api }}/auth/authorize-box"
 name: Auth Box
@@ -34,9 +34,9 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"branch_office_id": "1",
-    	"branch_box_id": "2",
-    	"username": "oliver95@example.net",
+    	"branch_office_id": "46",
+    	"branch_box_id": "97",
+    	"username": "ainara.nieves@example.net",
     	"password": "{% hash 'sha1', 'hex', 'password' %}"
     }
 parameters: []

@@ -1,0 +1,37 @@
+_id: req_18384a07cfcd4a4da8a9397143f7d557
+type: Request
+parentId: fld_b511e3b90a294d1aaf070d41df40a687
+modified: 1647971402745
+created: 1647356187565
+url: https://10.0.1.1:8443/super99/services/Cows?wsdl
+name: My Request
+description: ""
+method: POST
+body:
+  mimeType: application/xml
+  text: |-
+    <?xml version="1.0" encoding="utf-8"?>
+    <soap:Envelope
+    	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    	<soap:Body>
+    		<operacion:cons_saldo_cliente
+    			xmlns="https://10.0.1.1:8443/super99/services/">
+    			<cliente>81893510</cliente>
+    			<entidad>3750</entidad>
+    		</operacion:cons_saldo_cliente>
+    	</soap:Body>
+    </soap:Envelope>
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/xml
+    id: pair_ef4deb6fea81475fbf1e25d4a4768540
+authentication: {}
+metaSortKey: -1647356187565
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

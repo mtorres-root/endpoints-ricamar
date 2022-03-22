@@ -1,7 +1,7 @@
 _id: req_609c44546aaf4fe4ae50cf76500669a3
 type: Request
 parentId: fld_9f1db351020f479bb28ccddc63788878
-modified: 1647015941633
+modified: 1647974257653
 created: 1647015523965
 url: "{{ _.api }}/auth/check-box-active"
 name: Check Box authorization
@@ -34,8 +34,8 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"branch_office_id": "1",
-    	"branch_box_id": "2"
+    	"branch_office_id": "46",
+    	"branch_box_id": "97"
     }
 parameters: []
 headers:

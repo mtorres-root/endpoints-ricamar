@@ -1,9 +1,9 @@
 _id: req_dbdfd540ecae4d07bdefbc1deb9712e1
 type: Request
 parentId: fld_e97bf5e874864cdea462884c2d95780d
-modified: 1646923501592
+modified: 1647974223957
 created: 1646750037294
-url: "{{ _.api }}/setting/branch-offices/16"
+url: "{{ _.api }}/setting/branch-offices/13"
 name: Get Branch Offices
 description: ""
 method: GET
