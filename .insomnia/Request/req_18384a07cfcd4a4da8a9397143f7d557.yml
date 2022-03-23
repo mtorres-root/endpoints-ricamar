@@ -1,31 +1,35 @@
 _id: req_18384a07cfcd4a4da8a9397143f7d557
 type: Request
 parentId: fld_b511e3b90a294d1aaf070d41df40a687
-modified: 1648043365779
+modified: 1648047956537
 created: 1647356187565
 url: https://10.0.1.1:8443/super99/services/Cows?wsdl
 name: My Request
 description: ""
-method: POST
+method: GET
 body:
   mimeType: application/xml
   text: |-
-    <?xml version="1.0" encoding="utf-8"?>
-    <soap:Envelope
-    	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
-    	<soap:Body>
-    		<operacion:cons_saldo_cliente
-    			xmlns="https://10.0.1.1:8443/super99/services/">
+    <soapenv:Envelope
+    	xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    	xmlns:ser="http://service.cows.gnconsult.com/">
+    	<soapenv:Header/>
+    	<soapenv:Body>
+    		<ser:cons_saldo_cliente>
     			<cliente>81893510</cliente>
     			<entidad>3750</entidad>
-    		</operacion:cons_saldo_cliente>
-    	</soap:Body>
-    </soap:Envelope>
+    		</ser:cons_saldo_cliente>
+    	</soapenv:Body>
+    </soapenv:Envelope>
 parameters: []
 headers:
   - name: Content-Type
-    value: application/xml
+    value: text/xml
     id: pair_ef4deb6fea81475fbf1e25d4a4768540
+  - id: pair_ed394abe18d84efab62bc14c0513654f
+    name: charset
+    value: UTF-8
+    description: ""
 authentication: {}
 metaSortKey: -1647356187565
 isPrivate: false

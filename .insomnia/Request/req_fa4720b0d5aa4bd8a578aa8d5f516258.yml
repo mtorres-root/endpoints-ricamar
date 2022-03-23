@@ -1,25 +1,29 @@
-_id: req_96a2f50b77754e7f9ee282d749160db0
+_id: req_fa4720b0d5aa4bd8a578aa8d5f516258
 type: Request
-parentId: fld_66ee79e7fdd54980a89940992191b0b1
-modified: 1648048665966
-created: 1644606393485
-url: "{{ _.api }}/services"
-name: List Services
+parentId: fld_ce8c90b761784c9583316c36c5cfeaea
+modified: 1648048693709
+created: 1648044191017
+url: "{{ _.api }}/services/service-balance"
+name: Balance to Pay
 description: ""
-method: GET
-body: {}
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"detail_service_id": 1,
+    	"amount_received": 100
+    }
 parameters: []
 headers:
-  - id: pair_2b0a2388463048d68bbec8872173d0a0
-    name: Content-Type
+  - name: Content-Type
     value: application/json
-    description: ""
+    id: pair_76b34c885520497a824f4ce6be2745ad
 authentication:
   type: bearer
   token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
-  disabled: false
-metaSortKey: -1646855897695
+metaSortKey: -1647700066734.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

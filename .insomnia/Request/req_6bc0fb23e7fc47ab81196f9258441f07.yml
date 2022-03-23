@@ -1,25 +1,20 @@
-_id: req_96a2f50b77754e7f9ee282d749160db0
+_id: req_6bc0fb23e7fc47ab81196f9258441f07
 type: Request
-parentId: fld_66ee79e7fdd54980a89940992191b0b1
-modified: 1648048665966
-created: 1644606393485
-url: "{{ _.api }}/services"
-name: List Services
+parentId: fld_ce8c90b761784c9583316c36c5cfeaea
+modified: 1648048680682
+created: 1648043945904
+url: "{{ _.api }}/services/service-data/1"
+name: Detail Service
 description: ""
 method: GET
 body: {}
 parameters: []
-headers:
-  - id: pair_2b0a2388463048d68bbec8872173d0a0
-    name: Content-Type
-    value: application/json
-    description: ""
+headers: []
 authentication:
   type: bearer
   token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
-  disabled: false
-metaSortKey: -1646855897695
+metaSortKey: -1648043945904
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
