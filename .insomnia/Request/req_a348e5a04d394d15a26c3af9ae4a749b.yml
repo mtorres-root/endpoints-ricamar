@@ -1,15 +1,25 @@
 _id: req_a348e5a04d394d15a26c3af9ae4a749b
 type: Request
 parentId: fld_66ee79e7fdd54980a89940992191b0b1
-modified: 1647977973397
+modified: 1648043064555
 created: 1647977923347
-url: "{{ _.api }}/services/3/type-document/1/service-data"
+url: "{{ _.api }}/services/service-data"
 name: List by Service and type document
 description: ""
-method: GET
-body: {}
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"service_id": 1,
+    	"type_document_service_id": 2,
+    	"identification": "12345678"
+    }
 parameters: []
-headers: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_3314d6f73e9f41368f8fdea6d5561f21
 authentication:
   type: bearer
   token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
