@@ -1,7 +1,7 @@
 _id: req_6e66410ddb4745cb94c36774a64fcc8e
 type: Request
 parentId: fld_b511e3b90a294d1aaf070d41df40a687
-modified: 1648047110276
+modified: 1648162263171
 created: 1648046072822
 url: https://10.0.1.1:8443/super99/services/Cows?wsdl
 name: My Request
@@ -9,57 +9,33 @@ description: ""
 method: GET
 body:
   mimeType: application/xml
-  text: >-
+  text: |-
     <soap:Envelope
     	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
     	<soap:Body>
-    		<ns2:cons_saldo_clienteResponse
+    		<ns2:cons_gral_clienteResponse
     			xmlns:ns2="http://service.cows.gnconsult.com/">
-    			<_return>
-    				<entry>
-    					<key
-    						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">mensaje
-    					</key>
-    					<value
-    						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">TRANOK
-    					</value>
-    				</entry>
-    				<entry>
-    					<key
-    						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">fec_fechavence
-    					</key>
-    					<value
-    						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:dateTime">2021-06-08T00:00:00-05:00
-    					</value>
-    				</entry>
-    				<entry>
-    					<key
-    						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">codigoRet
-    					</key>
-    					<value
-    						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:int">0
-    					</value>
-    				</entry>
-    				<entry>
-    					<key
-    						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:string">vlr_saldocorriente
-    					</key>
-    					<value
-    						xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    						xmlns:xs="http://www.w3.org/2001/XMLSchema" xsi:type="xs:decimal">44.67
-    					</value>
-    				</entry>
-    			</_return>
-    		</ns2:cons_saldo_clienteResponse>
+    			<return>
+    				<codigoRet>0</codigoRet>
+    				<mensaje>TRANOK</mensaje>
+    				<cliente>
+    					<cdn_observacion></cdn_observacion>
+    					<cod_cliente_cparty>81893510</cod_cliente_cparty>
+    					<est_estado>A</est_estado>
+    					<fec_fechavence>2021-06-08 00:00:00.0</fec_fechavence>
+    					<nom_cliente>ALCIDES  ABREGO GONZALEZ</nom_cliente>
+    					<vlr_pagominimo>0</vlr_pagominimo>
+    					<vlr_saldo30>0</vlr_saldo30>
+    					<vlr_saldo60>0</vlr_saldo60>
+    					<vlr_saldo90>0</vlr_saldo90>
+    					<vlr_saldo90mas>0</vlr_saldo90mas>
+    					<vlr_saldocorriente>90.94</vlr_saldocorriente>
+    					<vlr_saldototal>90.94</vlr_saldototal>
+    				</cliente>
+    			</return>
+    		</ns2:cons_gral_clienteResponse>
     	</soap:Body>
-    </soap:Envelope>
+    </soap:Envelope>[sosadmin@Proypagotigo ~]$
 parameters: []
 headers:
   - name: Content-Type

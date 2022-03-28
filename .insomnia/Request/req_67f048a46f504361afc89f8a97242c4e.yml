@@ -1,7 +1,7 @@
 _id: req_67f048a46f504361afc89f8a97242c4e
 type: Request
 parentId: fld_e97bf5e874864cdea462884c2d95780d
-modified: 1647978971895
+modified: 1648053124513
 created: 1646750333094
 url: "{{ _.api }}/setting/branch-boxes/46"
 name: Get Branch Boxes
