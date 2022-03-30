@@ -1,10 +1,10 @@
 _id: req_a348e5a04d394d15a26c3af9ae4a749b
 type: Request
 parentId: fld_66ee79e7fdd54980a89940992191b0b1
-modified: 1648663977807
+modified: 1648679811681
 created: 1647977923347
 url: "{{ _.api }}/services/service-data"
-name: List by Service and type document
+name: "[TR] List by Service and type document"
 description: ""
 method: POST
 body:
@@ -12,8 +12,8 @@ body:
   text: |-
     {
     	"service_id": 1,
-    	"type_document_service_id": 6,
-    	"identification": "92679088"
+    	"type_document_service_id": 7,
+    	"identification": "137071"
     }
 parameters: []
 headers:

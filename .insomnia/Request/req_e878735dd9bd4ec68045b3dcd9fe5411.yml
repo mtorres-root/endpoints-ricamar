@@ -1,20 +1,15 @@
 _id: req_e878735dd9bd4ec68045b3dcd9fe5411
 type: Request
 parentId: fld_ce8c90b761784c9583316c36c5cfeaea
-modified: 1648657092640
+modified: 1648679741581
 created: 1648048094648
 url: "{{ _.api }}/services/service-balance/1"
 name: Balance to Pay
 description: ""
 method: GET
-body:
-  mimeType: application/json
-  text: ""
+body: {}
 parameters: []
-headers:
-  - name: Content-Type
-    value: application/json
-    id: pair_76b34c885520497a824f4ce6be2745ad
+headers: []
 authentication:
   type: bearer
   token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
