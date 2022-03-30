@@ -1,9 +1,11 @@
 _id: req_6bc0fb23e7fc47ab81196f9258441f07
 type: Request
 parentId: fld_ce8c90b761784c9583316c36c5cfeaea
-modified: 1648160440508
+modified: 1648664029718
 created: 1648043945904
-url: "{{ _.api }}/services/service-data/1"
+url: "{{ _.api }}/services/service-data/{% response 'body',
+  'req_a348e5a04d394d15a26c3af9ae4a749b', 'b64::JC5kYXRhWzFdLmlk::46b', 'never',
+  60 %}"
 name: Detail Service
 description: ""
 method: GET
