@@ -1,0 +1,40 @@
+_id: req_399eef9c212c4361b32ca78184b87039
+type: Request
+parentId: fld_ee8132f62e2044489e02c8f83fd607ce
+modified: 1648682115690
+created: 1648681706593
+url: ""
+name: Response
+description: ""
+method: GET
+body:
+  mimeType: application/xml
+  text: >-
+    <?xml version="1.0" encoding="utf-8"?>
+
+    <soap:Envelope
+    	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    	<soap:Body>
+    		<soap:Fault>
+    			<faultcode>soap:Client</faultcode>
+    			<faultstring>Unable to handle request without a valid action parameter. Please supply a valid soap action.</faultstring>
+    			<detail />
+    		</soap:Fault>
+    	</soap:Body>
+    </soap:Envelope>
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/xml
+    id: pair_837398118b054a1395b836cc4a2a1611
+authentication: {}
+metaSortKey: -1648681706593
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

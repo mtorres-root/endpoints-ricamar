@@ -1,0 +1,39 @@
+_id: req_ea9db3ca3aa94880aff5551c1aed7c2f
+type: Request
+parentId: fld_ee8132f62e2044489e02c8f83fd607ce
+modified: 1649198584585
+created: 1648680986925
+url: http://10.220.221.35/RecaudacionOnLineDesa/Service1.asmx?wsdl
+name: Mobile
+description: ""
+method: POST
+body:
+  mimeType: application/xml
+  text: >-
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:web="http://localhost/webservice/">
+       <soapenv:Header/>
+       <soapenv:Body>
+          <web:consultaSaldoTotal>
+             <web:valor_busqueda>66301051</web:valor_busqueda>
+             <web:tipo_busqueda>NC</web:tipo_busqueda>
+             <web:usuario>SUPER99</web:usuario>
+             <web:contrasena>PRUEBAS123!</web:contrasena>
+          </web:consultaSaldoTotal>
+       </soapenv:Body>
+    </soapenv:Envelope>
+parameters: []
+headers:
+  - id: pair_46f3d34992754797a8b2cc6b5a841326
+    name: Content-Type
+    value: text/xml
+    description: ""
+authentication: {}
+metaSortKey: -1648681706643
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
