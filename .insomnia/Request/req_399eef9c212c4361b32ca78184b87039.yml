@@ -1,7 +1,7 @@
 _id: req_399eef9c212c4361b32ca78184b87039
 type: Request
 parentId: fld_ee8132f62e2044489e02c8f83fd607ce
-modified: 1648682115690
+modified: 1649364616946
 created: 1648681706593
 url: ""
 name: Response
@@ -9,21 +9,19 @@ description: ""
 method: GET
 body:
   mimeType: application/xml
-  text: >-
-    <?xml version="1.0" encoding="utf-8"?>
-
+  text: |-
     <soap:Envelope
-    	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
-    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
     	<soap:Body>
-    		<soap:Fault>
-    			<faultcode>soap:Client</faultcode>
-    			<faultstring>Unable to handle request without a valid action parameter. Please supply a valid soap action.</faultstring>
-    			<detail />
-    		</soap:Fault>
+    		<ns2:ins_trans_pagoResponse
+    			xmlns:ns2="http://service.cows.gnconsult.com/">
+    			<return>
+    				<codigoRet>0</codigoRet>
+    				<mensaje>TRANOK</mensaje>
+    			</return>
+    		</ns2:ins_trans_pagoResponse>
     	</soap:Body>
-    </soap:Envelope>
+    </soap:Envelope>[sosadmin@Proypagotigo ~]$
 parameters: []
 headers:
   - name: Content-Type

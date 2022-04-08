@@ -1,7 +1,7 @@
 _id: req_a3ea1bc2716943bfa75ae162eb311b4e
 type: Request
 parentId: fld_ce8c90b761784c9583316c36c5cfeaea
-modified: 1648665050957
+modified: 1649449716313
 created: 1648044232227
 url: "{{ _.api }}/services/service-pay"
 name: Pay Service
@@ -9,10 +9,12 @@ description: ""
 method: POST
 body:
   mimeType: application/json
-  text: |-
+  text: >-
     {
-    	"identification": "12345678",
-    	"detail_service_id": 1,
+    	"service_id": "{% response 'body', 'req_a348e5a04d394d15a26c3af9ae4a749b', 'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}",
+    	"company_id": 1,
+    	"branch_office_id": 1,
+    	"branch_box_id": 1,
     	"amount_received": 100
     }
 parameters: []

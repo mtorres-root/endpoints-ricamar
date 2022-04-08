@@ -1,9 +1,11 @@
 _id: req_e878735dd9bd4ec68045b3dcd9fe5411
 type: Request
 parentId: fld_ce8c90b761784c9583316c36c5cfeaea
-modified: 1648679741581
+modified: 1649449700813
 created: 1648048094648
-url: "{{ _.api }}/services/service-balance/1"
+url: "{{ _.api }}/services/service-balance/{% response 'body',
+  'req_a348e5a04d394d15a26c3af9ae4a749b', 'b64::JC5kYXRhWzBdLmlk::46b', 'never',
+  60 %}"
 name: Balance to Pay
 description: ""
 method: GET

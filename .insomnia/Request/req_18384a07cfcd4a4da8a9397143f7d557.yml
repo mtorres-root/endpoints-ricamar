@@ -1,7 +1,7 @@
 _id: req_18384a07cfcd4a4da8a9397143f7d557
 type: Request
 parentId: fld_b511e3b90a294d1aaf070d41df40a687
-modified: 1649172910277
+modified: 1649362752486
 created: 1647356187565
 url: https://10.0.1.1:8443/super99/services/Cows?wsdl
 name: Fijo
@@ -15,12 +15,16 @@ body:
     	xmlns:ser="http://service.cows.gnconsult.com/">
     	<soapenv:Header/>
     	<soapenv:Body>
-    		<ser:cons_gral_cliente>
-    			<cliente>12</cliente>
-    			<entidad>E</entidad>
-    			<entidad>8</entidad>
+    		<ser:ins_trans_pago_x_cliente>
+    			<cod_cliente_cparty>87992829</cod_cliente_cparty>
+    			<vlr_monto>5</vlr_monto>
+    			<forma_de_pago>Efectivo</forma_de_pago>
+    			<num_notransacion>1</num_notransacion>
+    			<fec_fecha_hora_tan>2022-04-07 15:45:54.247000</fec_fecha_hora_tan>
+    			<fec_fecha_contable>2022-04-07 15:45:54.247000</fec_fecha_contable>
+    			<des_forma_pago>Prueba test</des_forma_pago>
     			<entidad>95417</entidad>
-    		</ser:cons_gral_cliente>
+    		</ser:ins_trans_pago_x_cliente>
     	</soapenv:Body>
     </soapenv:Envelope>
 parameters: []
