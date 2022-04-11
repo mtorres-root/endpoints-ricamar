@@ -1,21 +1,19 @@
-_id: req_a3ea1bc2716943bfa75ae162eb311b4e
+_id: req_a1e757f65d8c47eebdaf3a3bcf9c25cc
 type: Request
 parentId: fld_f27b3e205c66481cb4ae235d0c94e271
-modified: 1649694872994
-created: 1648044232227
-url: "{{ _.api }}/services/service-pay"
-name: Pay Service
+modified: 1649694877971
+created: 1649694566777
+url: "{{ _.api }}/services/service-check"
+name: Confirmation Printer Code
 description: ""
 method: POST
 body:
   mimeType: application/json
-  text: |-
+  text: >-
     {
     	"service_id": "tigo-residential=1=CODE_ID_SUBSCRIPTOR=91125233=37370203",
-    	"company_id": 1,
-    	"branch_office_id": 1,
-    	"branch_box_id": 1,
-    	"amount_received": 100
+    	"slug": "{% response 'body', 'req_a3ea1bc2716943bfa75ae162eb311b4e', 'b64::JC5kYXRhLnNsdWc=::46b', 'never', 60 %}",
+    	"internal_receipt_number": "{% faker 'random', '', '', '', '', '', '', '', '', '', '', '', '', 'uuid', '', '', 'en' %}"
     }
 parameters: []
 headers:
@@ -26,7 +24,7 @@ authentication:
   type: bearer
   token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
-metaSortKey: -1648043945754
+metaSortKey: -1648000960932.8125
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
