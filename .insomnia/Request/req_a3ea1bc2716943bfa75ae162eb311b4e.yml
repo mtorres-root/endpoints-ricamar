@@ -1,7 +1,7 @@
 _id: req_a3ea1bc2716943bfa75ae162eb311b4e
 type: Request
 parentId: fld_f27b3e205c66481cb4ae235d0c94e271
-modified: 1649694872994
+modified: 1649698276888
 created: 1648044232227
 url: "{{ _.api }}/services/service-pay"
 name: Pay Service
@@ -9,13 +9,13 @@ description: ""
 method: POST
 body:
   mimeType: application/json
-  text: |-
+  text: >-
     {
-    	"service_id": "tigo-residential=1=CODE_ID_SUBSCRIPTOR=91125233=37370203",
+    	"service_id": "{% response 'body', 'req_a348e5a04d394d15a26c3af9ae4a749b', 'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}",
+    	"amount_received": "{% response 'body', 'req_fa4720b0d5aa4bd8a578aa8d5f516258', 'b64::JC5kYXRhLnBheV92YWx1ZQ==::46b', 'never', 60 %}",
     	"company_id": 1,
     	"branch_office_id": 1,
-    	"branch_box_id": 1,
-    	"amount_received": 100
+    	"branch_box_id": 1
     }
 parameters: []
 headers:

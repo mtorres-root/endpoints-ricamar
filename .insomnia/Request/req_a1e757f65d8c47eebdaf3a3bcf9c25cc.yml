@@ -1,7 +1,7 @@
 _id: req_a1e757f65d8c47eebdaf3a3bcf9c25cc
 type: Request
 parentId: fld_f27b3e205c66481cb4ae235d0c94e271
-modified: 1649694877971
+modified: 1649698285509
 created: 1649694566777
 url: "{{ _.api }}/services/service-check"
 name: Confirmation Printer Code
@@ -11,7 +11,7 @@ body:
   mimeType: application/json
   text: >-
     {
-    	"service_id": "tigo-residential=1=CODE_ID_SUBSCRIPTOR=91125233=37370203",
+    	"service_id": "{% response 'body', 'req_a348e5a04d394d15a26c3af9ae4a749b', 'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}",
     	"slug": "{% response 'body', 'req_a3ea1bc2716943bfa75ae162eb311b4e', 'b64::JC5kYXRhLnNsdWc=::46b', 'never', 60 %}",
     	"internal_receipt_number": "{% faker 'random', '', '', '', '', '', '', '', '', '', '', '', '', 'uuid', '', '', 'en' %}"
     }

@@ -1,7 +1,7 @@
 _id: req_8e6d5bf146eb4aeb8014b87e1ea07404
 type: Request
 parentId: fld_9f1db351020f479bb28ccddc63788878
-modified: 1649693787237
+modified: 1649698087318
 created: 1644589753418
 url: "{{ _.api }}/auth/login"
 name: Login
@@ -34,7 +34,7 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"username": "primerusuario@ricamar.com",
+    	"username": "cajero@rapidmoney.com",
     	"password": "{% hash 'sha1', 'hex', 'password' %}"
     }
 parameters: []
