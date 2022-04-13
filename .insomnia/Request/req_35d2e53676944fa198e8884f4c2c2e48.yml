@@ -1,0 +1,51 @@
+_id: req_35d2e53676944fa198e8884f4c2c2e48
+type: Request
+parentId: fld_ee8132f62e2044489e02c8f83fd607ce
+modified: 1649882523457
+created: 1649878946045
+url: http://10.220.221.35/RecaudacionOnLineDesa/Service1.asmx?wsdl
+name: Mobile Payment
+description: ""
+method: POST
+body:
+  mimeType: application/xml
+  text: >-
+    <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+    xmlns:web="http://localhost/webservice/">
+       <soap:Header/>
+       <soap:Body>
+          <web:pagoAbonoCuentaCorriente>
+             <web:cod_cliente>3584952</web:cod_cliente>
+             <web:num_celular></web:num_celular>
+             <web:cod_tipdocum></web:cod_tipdocum>
+             <web:submotivo></web:submotivo>
+             <web:imp_pago>10.01</web:imp_pago>
+             <web:tip_valor>1</web:tip_valor>
+             <web:num_documento></web:num_documento>
+             <web:cod_banco></web:cod_banco>
+             <web:num_compago></web:num_compago>
+             <web:num_tarjeta></web:num_tarjeta>
+             <web:num_venta></web:num_venta>
+             <web:comentario></web:comentario>
+             <web:num_factura></web:num_factura>
+             <web:num_folioctc>0012345</web:num_folioctc>
+             <web:usuario>PRUEBASPRO</web:usuario>
+             <web:contrasena>Test01</web:contrasena>
+          </web:pagoAbonoCuentaCorriente>
+       </soap:Body>
+    </soap:Envelope>
+parameters: []
+headers:
+  - id: pair_46f3d34992754797a8b2cc6b5a841326
+    name: Content-Type
+    value: text/xml
+    description: ""
+authentication: {}
+metaSortKey: -1648681706618
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

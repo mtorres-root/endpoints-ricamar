@@ -1,8 +1,8 @@
-_id: req_a3ea1bc2716943bfa75ae162eb311b4e
+_id: req_eda4cffc988b4edfbde9fe1b4f18dcb5
 type: Request
-parentId: fld_f27b3e205c66481cb4ae235d0c94e271
-modified: 1649865620452
-created: 1648044232227
+parentId: fld_0165f2b6f5d249aa8a810a8f1b74765c
+modified: 1649883151052
+created: 1649865731296
 url: "{{ _.api }}/services/service-pay"
 name: Pay Service
 description: ""
@@ -11,8 +11,8 @@ body:
   mimeType: application/json
   text: >-
     {
-    	"service_id": "{% response 'body', 'req_a348e5a04d394d15a26c3af9ae4a749b', 'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}",
-    	"amount_received": "{% response 'body', 'req_fa4720b0d5aa4bd8a578aa8d5f516258', 'b64::JC5kYXRhLmFtb3VudF9yZWNlaXZlZA==::46b', 'never', 60 %}",
+    	"service_id": "{% response 'body', 'req_7ffafa72b3be42ffb83305616dbfdcf2', 'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}",
+    	"amount_received": "{% response 'body', 'req_5d61e7ae94bc4a92a11aaa970fb244c6', 'b64::JC5kYXRhLmFtb3VudF9yZWNlaXZlZA==::46b', 'never', 60 %}",
     	"company_id": 1,
     	"branch_office_id": 1,
     	"branch_box_id": 1

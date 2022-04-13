@@ -1,8 +1,8 @@
-_id: req_a348e5a04d394d15a26c3af9ae4a749b
+_id: req_7ffafa72b3be42ffb83305616dbfdcf2
 type: Request
-parentId: fld_e62ba4f4922e437588574c4f87627f2d
-modified: 1649865593097
-created: 1647977923347
+parentId: fld_cfd30941e25a4000933a88aab0b18f09
+modified: 1649881390354
+created: 1649865731302
 url: "{{ _.api }}/services/service-data"
 name: List by Service and type document
 description: >-
@@ -51,9 +51,9 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"service_id": 1,
-    	"type_document_service_id": 6,
-      "identification": "89967295"
+    	"service_id": 2,
+    	"type_document_service_id": 9,
+      "identification": "66371062"
     }
 parameters: []
 headers:

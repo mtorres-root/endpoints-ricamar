@@ -1,7 +1,7 @@
 _id: req_ea9db3ca3aa94880aff5551c1aed7c2f
 type: Request
 parentId: fld_ee8132f62e2044489e02c8f83fd607ce
-modified: 1649693476855
+modified: 1649883946521
 created: 1648680986925
 url: http://10.220.221.35/RecaudacionOnLineDesa/Service1.asmx?wsdl
 name: Mobile
@@ -10,18 +10,21 @@ method: POST
 body:
   mimeType: application/xml
   text: >-
-    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
     xmlns:web="http://localhost/webservice/">
-       <soapenv:Header/>
-       <soapenv:Body>
-          <web:consultaSaldoTotal>
-             <web:valor_busqueda>66301051</web:valor_busqueda>
-             <web:tipo_busqueda>NC</web:tipo_busqueda>
+       <soap:Header/>
+       <soap:Body>
+          <web:reversaPago>
+             <!--Optional:-->
+             <web:num_transaccion>239005</web:num_transaccion>
+             <!--Optional:-->
+             <web:num_folioctc>620023</web:num_folioctc>
+             <!--Optional:-->
              <web:usuario>SUPER99</web:usuario>
              <web:contrasena>PRUEBAS123!</web:contrasena>
-          </web:consultaSaldoTotal>
-       </soapenv:Body>
-    </soapenv:Envelope>
+          </web:reversaPago>
+       </soap:Body>
+    </soap:Envelope>
 parameters: []
 headers:
   - id: pair_46f3d34992754797a8b2cc6b5a841326

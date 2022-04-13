@@ -1,7 +1,7 @@
 _id: req_399eef9c212c4361b32ca78184b87039
 type: Request
 parentId: fld_ee8132f62e2044489e02c8f83fd607ce
-modified: 1649364616946
+modified: 1649882057312
 created: 1648681706593
 url: ""
 name: Response
@@ -9,17 +9,18 @@ description: ""
 method: GET
 body:
   mimeType: application/xml
-  text: |-
+  text: >-
+    <?xml version="1.0" encoding="utf-8"?>
+
     <soap:Envelope
-    	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    	xmlns:soap="http://www.w3.org/2003/05/soap-envelope"
+    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     	<soap:Body>
-    		<ns2:ins_trans_pagoResponse
-    			xmlns:ns2="http://service.cows.gnconsult.com/">
-    			<return>
-    				<codigoRet>0</codigoRet>
-    				<mensaje>TRANOK</mensaje>
-    			</return>
-    		</ns2:ins_trans_pagoResponse>
+    		<pagoAbonoCuentaCorrienteResponse
+    			xmlns="http://localhost/webservice/">
+    			<pagoAbonoCuentaCorrienteResult>&lt;?xml version='1.0' encoding='utf-8'?&gt;&lt;rl_con&gt;&lt;reg&gt;&lt;num_transaccion&gt;238970&lt;/num_transaccion&gt;&lt;/reg&gt;&lt;errmsg&gt;&lt;errmsg_codigo&gt;0&lt;/errmsg_codigo&gt;&lt;errmsg_descripcion&gt; &lt;/errmsg_descripcion&gt;&lt;/errmsg&gt;&lt;/rl_con&gt;</pagoAbonoCuentaCorrienteResult>
+    		</pagoAbonoCuentaCorrienteResponse>
     	</soap:Body>
     </soap:Envelope>[sosadmin@Proypagotigo ~]$
 parameters: []

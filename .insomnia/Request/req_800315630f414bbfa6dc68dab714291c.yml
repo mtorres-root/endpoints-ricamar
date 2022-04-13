@@ -1,8 +1,8 @@
-_id: req_a1e757f65d8c47eebdaf3a3bcf9c25cc
+_id: req_800315630f414bbfa6dc68dab714291c
 type: Request
-parentId: fld_f27b3e205c66481cb4ae235d0c94e271
-modified: 1649865627553
-created: 1649694566777
+parentId: fld_0165f2b6f5d249aa8a810a8f1b74765c
+modified: 1649883994364
+created: 1649865731300
 url: "{{ _.api }}/services/service-check"
 name: Confirmation Printer Code
 description: ""
@@ -11,8 +11,8 @@ body:
   mimeType: application/json
   text: >-
     {
-    	"service_id": "{% response 'body', 'req_a348e5a04d394d15a26c3af9ae4a749b', 'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}",
-    	"slug": "{% response 'body', 'req_a3ea1bc2716943bfa75ae162eb311b4e', 'b64::JC5kYXRhLnNsdWc=::46b', 'never', 60 %}",
+    	"service_id": "{% response 'body', 'req_7ffafa72b3be42ffb83305616dbfdcf2', 'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}",
+    	"slug": "{% response 'body', 'req_eda4cffc988b4edfbde9fe1b4f18dcb5', 'b64::JC5kYXRhLnNsdWc=::46b', 'never', 60 %}",
     	"internal_receipt_number": "{% faker 'random', '', '', '', '', '', '', '', '', '', '', '', '', 'uuid', '', '', 'en' %}"
     }
 parameters: []

@@ -1,12 +1,10 @@
-_id: req_ed7914525dea48a89c1908832576e08f
+_id: req_256724ded63042f889cab2f7a52d503f
 type: Request
-parentId: fld_919b2cbc35814645a5c3bf411778ba24
-modified: 1649691586101
-created: 1649253166441
-url: "{{ _.api }}/services/service-data/{% response 'body',
-  'req_bac3722b295d42b4853d50fc92292020', 'b64::JC5kYXRhWzBdLmlk::46b', 'never',
-  60 %}"
-name: "[TM] Detail Service"
+parentId: fld_cfd30941e25a4000933a88aab0b18f09
+modified: 1649881381092
+created: 1649865731304
+url: "{{ _.api }}/services/2/type-document"
+name: Type Document By Service
 description: ""
 method: GET
 body: {}
@@ -16,7 +14,8 @@ authentication:
   type: bearer
   token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
-metaSortKey: -1647957976111.625
+  disabled: false
+metaSortKey: -1649628782984.75
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

@@ -1,10 +1,12 @@
-_id: req_2a69cd3cd932495096bbd811334f2ffb
+_id: req_085b63d37d504601a35d58beffec5898
 type: Request
-parentId: fld_22b8c2e43ff04f3b8a1c27916516579f
-modified: 1649691549091
-created: 1649691547480
-url: "{{ _.api }}/services/1/type-document"
-name: Type Document By Service
+parentId: fld_0165f2b6f5d249aa8a810a8f1b74765c
+modified: 1649881406624
+created: 1649865731298
+url: "{{ _.api }}/services/service-balance/{% response 'body',
+  'req_7ffafa72b3be42ffb83305616dbfdcf2', 'b64::JC5kYXRhWzBdLmlk::46b', 'never',
+  60 %}"
+name: Balance to Pay
 description: ""
 method: GET
 body: {}
@@ -14,8 +16,7 @@ authentication:
   type: bearer
   token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
-  disabled: false
-metaSortKey: -1649597411757.375
+metaSortKey: -1648043945854
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
