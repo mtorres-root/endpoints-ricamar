@@ -1,16 +1,19 @@
 _id: req_43782e9682ff4b66a7f69cb23d85844f
 type: Request
 parentId: fld_0a9dd3b675ec43fb80ca4f22e423542b
-modified: 1650908557171
+modified: 1650910926729
 created: 1650908503327
-url: "{{ _.api }}/auth/check-login-supervisor"
+url: "{{ _.api }}/supervisor/all-transaction"
 name: List Transactions
 description: ""
 method: GET
 body: {}
 parameters: []
 headers: []
-authentication: {}
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_43bf7094f38044eeb02c8e227e69e5eb',
+    'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
 metaSortKey: -1650908518904
 isPrivate: false
 settingStoreCookies: true
