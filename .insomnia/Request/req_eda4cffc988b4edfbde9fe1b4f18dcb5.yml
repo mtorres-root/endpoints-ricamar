@@ -1,7 +1,7 @@
 _id: req_eda4cffc988b4edfbde9fe1b4f18dcb5
 type: Request
 parentId: fld_0165f2b6f5d249aa8a810a8f1b74765c
-modified: 1650423160053
+modified: 1650917465490
 created: 1649865731296
 url: "{{ _.api }}/services/service-pay"
 name: Pay Service
@@ -14,9 +14,9 @@ body:
     	"service_id": "{% response 'body', 'req_7ffafa72b3be42ffb83305616dbfdcf2', 'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}",
     	"full_name": "{% response 'body', 'req_5d61e7ae94bc4a92a11aaa970fb244c6', 'b64::JC5kYXRhLmZ1bGxfbmFtZQ==::46b', 'never', 60 %}",
     	"amount_received": "{% response 'body', 'req_5d61e7ae94bc4a92a11aaa970fb244c6', 'b64::JC5kYXRhLmFtb3VudF9yZWNlaXZlZA==::46b', 'never', 60 %}",
-    	"company_id": 1,
-    	"branch_office_id": 1,
-    	"branch_box_id": 1
+    	"company_id": "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmNvbXBhbnlfaWQ=::46b', 'never', 60 %}",
+    	"branch_office_id": "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9vZmZpY2VfaWQ=::46b', 'never', 60 %}",
+    	"branch_box_id":  "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9ib3hfaWQ=::46b', 'never', 60 %}"
     }
 parameters: []
 headers:
