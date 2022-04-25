@@ -1,7 +1,7 @@
 _id: req_43782e9682ff4b66a7f69cb23d85844f
 type: Request
 parentId: fld_0a9dd3b675ec43fb80ca4f22e423542b
-modified: 1650911245119
+modified: 1650911535790
 created: 1650908503327
 url: "{{ _.api }}/supervisor/all-transaction"
 name: List Transactions

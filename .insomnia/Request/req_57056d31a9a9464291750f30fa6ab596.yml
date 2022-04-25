@@ -1,15 +1,24 @@
 _id: req_57056d31a9a9464291750f30fa6ab596
 type: Request
 parentId: fld_c8b71793d658474bb3d6feea11cecfe0
-modified: 1650910425947
+modified: 1650911551244
 created: 1650908550492
-url: "{{ _.api }}/auth/check-login-supervisor"
+url: "{{ _.api }}/supervisor/apply-arching"
 name: Apply Arching
 description: ""
 method: POST
-body: {}
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"branch_office_id": "{% response 'body', 'req_67f048a46f504361afc89f8a97242c4e', 'b64::JC5kYXRhLmJyYW5jaEJveGVzWzBdLmJyYW5jaF9vZmZpY2VfaWQ=::46b', 'never', 60 %}",
+    	"branch_box_id":  "{% response 'body', 'req_67f048a46f504361afc89f8a97242c4e', 'b64::JC5kYXRhLmJyYW5jaEJveGVzWzBdLmlk::46b', 'never', 60 %}"
+    }
 parameters: []
-headers: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_2ed31201b26c40279cf1e017a96398b7
 authentication:
   type: bearer
   token: "{% response 'body', 'req_43bf7094f38044eeb02c8e227e69e5eb',
