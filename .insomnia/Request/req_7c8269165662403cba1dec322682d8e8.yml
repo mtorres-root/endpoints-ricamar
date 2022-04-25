@@ -1,0 +1,21 @@
+_id: req_7c8269165662403cba1dec322682d8e8
+type: Request
+parentId: fld_c8b71793d658474bb3d6feea11cecfe0
+modified: 1650908558897
+created: 1650908542810
+url: "{{ _.api }}/auth/check-login-supervisor"
+name: List Arching
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1650908542810
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,7 +1,7 @@
 _id: req_609c44546aaf4fe4ae50cf76500669a3
 type: Request
-parentId: fld_9f1db351020f479bb28ccddc63788878
-modified: 1650293800023
+parentId: fld_e97bf5e874864cdea462884c2d95780d
+modified: 1650910143760
 created: 1647015523965
 url: "{{ _.api }}/auth/check-box-active"
 name: Check Box authorization
@@ -32,10 +32,10 @@ description: |-
 method: POST
 body:
   mimeType: application/json
-  text: |-
+  text: >-
     {
-    	"branch_office_id": "46",
-    	"branch_box_id": "97"
+    	"branch_office_id": "{% response 'body', 'req_67f048a46f504361afc89f8a97242c4e', 'b64::JC5kYXRhLmJyYW5jaEJveGVzWzBdLmJyYW5jaF9vZmZpY2VfaWQ=::46b', 'never', 60 %}",
+    	"branch_box_id":  "{% response 'body', 'req_67f048a46f504361afc89f8a97242c4e', 'b64::JC5kYXRhLmJyYW5jaEJveGVzWzBdLmlk::46b', 'never', 60 %}"
     }
 parameters: []
 headers:
@@ -44,9 +44,9 @@ headers:
     id: pair_aaf6add80c194099bc6a5e32d9c2efa2
 authentication:
   type: bearer
-  token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
+  token: "{% response 'body', 'req_d0b880742b90459797a85862ed5f505d',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
-metaSortKey: -1644606393510
+metaSortKey: -1645664811449.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

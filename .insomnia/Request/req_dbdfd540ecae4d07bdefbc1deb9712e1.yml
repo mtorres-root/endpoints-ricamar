@@ -1,9 +1,11 @@
 _id: req_dbdfd540ecae4d07bdefbc1deb9712e1
 type: Request
 parentId: fld_e97bf5e874864cdea462884c2d95780d
-modified: 1649698120099
+modified: 1650909576989
 created: 1646750037294
-url: "{{ _.api }}/setting/branch-offices/1"
+url: "{{ _.api }}/setting/branch-offices/{% response 'body',
+  'req_d0b880742b90459797a85862ed5f505d', 'b64::JC5kYXRhLmNvbXBhbnkuaWQ=::46b',
+  'never', 60 %}"
 name: Get Branch Offices
 description: ""
 method: GET
