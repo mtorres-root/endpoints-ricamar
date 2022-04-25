@@ -1,15 +1,24 @@
 _id: req_43782e9682ff4b66a7f69cb23d85844f
 type: Request
 parentId: fld_0a9dd3b675ec43fb80ca4f22e423542b
-modified: 1650910926729
+modified: 1650911245119
 created: 1650908503327
 url: "{{ _.api }}/supervisor/all-transaction"
 name: List Transactions
 description: ""
-method: GET
-body: {}
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"branch_office_id": "{% response 'body', 'req_67f048a46f504361afc89f8a97242c4e', 'b64::JC5kYXRhLmJyYW5jaEJveGVzWzBdLmJyYW5jaF9vZmZpY2VfaWQ=::46b', 'never', 60 %}",
+    	"branch_box_id":  "{% response 'body', 'req_67f048a46f504361afc89f8a97242c4e', 'b64::JC5kYXRhLmJyYW5jaEJveGVzWzBdLmlk::46b', 'never', 60 %}"
+    }
 parameters: []
-headers: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a7167f83088440168de4727027ff281f
 authentication:
   type: bearer
   token: "{% response 'body', 'req_43bf7094f38044eeb02c8e227e69e5eb',
