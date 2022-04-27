@@ -1,19 +1,18 @@
-_id: req_4d5b2641610f495aab54643f0669879d
+_id: req_5389c10a34044aebb2f5fa164f92639b
 type: Request
-parentId: fld_0165f2b6f5d249aa8a810a8f1b74765c
-modified: 1651088473797
-created: 1649883003295
+parentId: fld_2adaa17667764575b03e6bc44901efdf
+modified: 1651089039113
+created: 1651088498107
 url: "{{ _.api }}/services/service-reverse"
-name: Reverse Payment
+name: "[TM] Reverse Payment"
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: >-
     {
-    	"service_id": "{% response 'body', 'req_7ffafa72b3be42ffb83305616dbfdcf2', 'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}",
-    	"slug": "{% response 'body', 'req_eda4cffc988b4edfbde9fe1b4f18dcb5', 'b64::JC5kYXRhLnNsdWc=::46b', 'never', 60 %}",
-    	"transaction": "{% response 'body', 'req_eda4cffc988b4edfbde9fe1b4f18dcb5', 'b64::JC5kYXRhLnRyYW5zYWN0aW9u::46b', 'never', 60 %}"
+    	"slug": "{% response 'body', 'req_43782e9682ff4b66a7f69cb23d85844f', 'b64::JC5kYXRhLmRhdGFbMF0uc2x1Zw==::46b', 'never', 60 %}",
+    	"transaction":  "{% response 'body', 'req_43782e9682ff4b66a7f69cb23d85844f', 'b64::JC5kYXRhLmRhdGFbMF0uc2VydmljZV9yZWNlaXB0X251bWJlcg==::46b', 'never', 60 %}"
     }
 parameters: []
 headers:
@@ -24,7 +23,7 @@ authentication:
   type: bearer
   token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
-metaSortKey: -1647678574248.9062
+metaSortKey: -1650998489861.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

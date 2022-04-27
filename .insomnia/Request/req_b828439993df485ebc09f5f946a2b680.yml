@@ -1,18 +1,17 @@
-_id: req_04b90e9098c04d68bd5a5cf8761096ad
+_id: req_b828439993df485ebc09f5f946a2b680
 type: Request
-parentId: fld_f27b3e205c66481cb4ae235d0c94e271
-modified: 1651088507353
-created: 1650898149386
-url: "{{ _.api }}/services/service-reverse"
-name: Reverse Payment
+parentId: fld_2adaa17667764575b03e6bc44901efdf
+modified: 1651088992155
+created: 1651088515879
+url: "{{ _.api }}/supervisor/service-reverse"
+name: "[TR] Reverse Payment"
 description: ""
 method: POST
 body:
   mimeType: application/json
   text: >-
     {
-    	"service_id": "{% response 'body', 'req_a348e5a04d394d15a26c3af9ae4a749b', 'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}",
-    	"slug": "{% response 'body', 'req_a3ea1bc2716943bfa75ae162eb311b4e', 'b64::JC5kYXRhLnNsdWc=::46b', 'never', 60 %}"
+    	"slug": "{% response 'body', 'req_43782e9682ff4b66a7f69cb23d85844f', 'b64::JC5kYXRhLmRhdGFbMF0uc2x1Zw==::46b', 'never', 60 %}"
     }
 parameters: []
 headers:
@@ -23,7 +22,7 @@ authentication:
   type: bearer
   token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
-metaSortKey: -1648000960882.8125
+metaSortKey: -1650998489911.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

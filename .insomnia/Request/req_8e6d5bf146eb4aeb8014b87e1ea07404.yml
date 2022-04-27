@@ -1,7 +1,7 @@
 _id: req_8e6d5bf146eb4aeb8014b87e1ea07404
 type: Request
 parentId: fld_9f1db351020f479bb28ccddc63788878
-modified: 1650981365998
+modified: 1650985205425
 created: 1644589753418
 url: "{{ _.api }}/auth/login"
 name: Login
@@ -34,7 +34,7 @@ body:
   mimeType: application/json
   text: >-
     {
-    	"username": "cajero@rapidmoney.com",
+    	"username": "milver@rapidmoney.com",
     	"password": "{% hash 'sha1', 'hex', 'password' %}",
     	"branch_box_auth_id": "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9ib3hfYXV0aF9pZA==::46b', 'never', 60 %}"
     }
