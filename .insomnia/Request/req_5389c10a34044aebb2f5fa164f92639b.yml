@@ -1,7 +1,7 @@
 _id: req_5389c10a34044aebb2f5fa164f92639b
 type: Request
 parentId: fld_2adaa17667764575b03e6bc44901efdf
-modified: 1651089039113
+modified: 1651089101666
 created: 1651088498107
 url: "{{ _.api }}/services/service-reverse"
 name: "[TM] Reverse Payment"
@@ -21,7 +21,7 @@ headers:
     id: pair_0d14594a2bb24bfa879ab6a2734abd88
 authentication:
   type: bearer
-  token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
+  token: "{% response 'body', 'req_43bf7094f38044eeb02c8e227e69e5eb',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
 metaSortKey: -1650998489861.5
 isPrivate: false
