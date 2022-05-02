@@ -1,7 +1,7 @@
 _id: req_43bf7094f38044eeb02c8e227e69e5eb
 type: Request
 parentId: fld_0a9dd3b675ec43fb80ca4f22e423542b
-modified: 1651510048617
+modified: 1651511028294
 created: 1648043075036
 url: "{{ _.api }}/auth/check-login-supervisor"
 name: Check Login - Supervisor

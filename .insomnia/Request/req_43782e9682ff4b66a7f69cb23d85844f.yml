@@ -1,7 +1,7 @@
 _id: req_43782e9682ff4b66a7f69cb23d85844f
 type: Request
 parentId: fld_7bacbe1e67a143ea9c5f42bc239a8ed9
-modified: 1651510204342
+modified: 1651511176151
 created: 1650908503327
 url: "{{ _.api }}/supervisor/all-transaction"
 name: List Transactions
@@ -17,9 +17,9 @@ body:
     	"service_account_number": "",
     	"service_receipt_number": "",
     	"transaction_status": "success",
-    	"start_date": "29/04/2022",
+    	"start_date": "29/04/2021",
     	"end_date": "29/04/2022",
-    	"service_id": 1
+    	"service_id": 2
     }
 parameters: []
 headers:
