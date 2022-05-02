@@ -1,7 +1,7 @@
 _id: req_43782e9682ff4b66a7f69cb23d85844f
 type: Request
-parentId: fld_0a9dd3b675ec43fb80ca4f22e423542b
-modified: 1651090774242
+parentId: fld_7bacbe1e67a143ea9c5f42bc239a8ed9
+modified: 1651510204342
 created: 1650908503327
 url: "{{ _.api }}/supervisor/all-transaction"
 name: List Transactions
@@ -12,7 +12,14 @@ body:
   text: >-
     {
     	"branch_office_id": "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9vZmZpY2VfaWQ=::46b', 'never', 60 %}",
-    	"branch_box_id":  "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9ib3hfaWQ=::46b', 'never', 60 %}"
+    	"branch_box_id":  "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9ib3hfaWQ=::46b', 'never', 60 %}",
+    	"slug": "",
+    	"service_account_number": "",
+    	"service_receipt_number": "",
+    	"transaction_status": "success",
+    	"start_date": "29/04/2022",
+    	"end_date": "29/04/2022",
+    	"service_id": 1
     }
 parameters: []
 headers:
@@ -23,7 +30,7 @@ authentication:
   type: bearer
   token: "{% response 'body', 'req_43bf7094f38044eeb02c8e227e69e5eb',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
-metaSortKey: -1651088460894
+metaSortKey: -1651088460969
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

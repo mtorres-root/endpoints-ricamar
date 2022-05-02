@@ -1,10 +1,10 @@
-_id: req_256724ded63042f889cab2f7a52d503f
+_id: req_57f1759994cb43829a5b5eec7ae80e93
 type: Request
-parentId: fld_cfd30941e25a4000933a88aab0b18f09
-modified: 1651508033456
-created: 1649865731304
-url: "{{ _.api }}/services/2/type-document"
-name: Type Document By Service
+parentId: fld_7bacbe1e67a143ea9c5f42bc239a8ed9
+modified: 1651510054999
+created: 1651510005168
+url: "{{ _.api }}/supervisor/all-filter"
+name: Filters
 description: ""
 method: GET
 body: {}
@@ -12,10 +12,9 @@ parameters: []
 headers: []
 authentication:
   type: bearer
-  token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
+  token: "{% response 'body', 'req_43bf7094f38044eeb02c8e227e69e5eb',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
-  disabled: false
-metaSortKey: -1649628782984.75
+metaSortKey: -1651088461019
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
