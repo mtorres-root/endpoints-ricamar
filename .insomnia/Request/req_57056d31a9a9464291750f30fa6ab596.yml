@@ -1,7 +1,7 @@
 _id: req_57056d31a9a9464291750f30fa6ab596
 type: Request
 parentId: fld_c8b71793d658474bb3d6feea11cecfe0
-modified: 1651511021598
+modified: 1651675955930
 created: 1650908550492
 url: "{{ _.api }}/supervisor/apply-arching"
 name: Apply Arching
@@ -12,7 +12,8 @@ body:
   text: >-
     {
     	"branch_office_id": "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9vZmZpY2VfaWQ=::46b', 'never', 60 %}",
-    	"branch_box_id":  "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9ib3hfaWQ=::46b', 'never', 60 %}"
+    	"branch_box_id":  "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9ib3hfaWQ=::46b', 'never', 60 %}",
+    	"date": ""
     }
 parameters: []
 headers:

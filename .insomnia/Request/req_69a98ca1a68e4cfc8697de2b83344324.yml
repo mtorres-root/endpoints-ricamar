@@ -1,10 +1,12 @@
-_id: req_02b2c946ce304dacb7bdb6178e464392
+_id: req_69a98ca1a68e4cfc8697de2b83344324
 type: Request
-parentId: fld_e62ba4f4922e437588574c4f87627f2d
-modified: 1651675867514
-created: 1649691541692
-url: "{{ _.api }}/services/1/type-document"
-name: Type Document By Service
+parentId: fld_f27b3e205c66481cb4ae235d0c94e271
+modified: 1651676008224
+created: 1651602111610
+url: "{{ _.web }}/services/service-print-pay/{% response 'body',
+  'req_a3ea1bc2716943bfa75ae162eb311b4e', 'b64::JC5kYXRhLnNsdWc=::46b', 'never',
+  60 %}"
+name: PRINT Pay Service
 description: ""
 method: GET
 body: {}
@@ -14,8 +16,7 @@ authentication:
   type: bearer
   token: "{% response 'body', 'req_8e6d5bf146eb4aeb8014b87e1ea07404',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
-  disabled: false
-metaSortKey: -1649628782984.75
+metaSortKey: -1648022453343.4062
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
