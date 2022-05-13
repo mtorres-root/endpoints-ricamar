@@ -1,11 +1,9 @@
 _id: req_69a98ca1a68e4cfc8697de2b83344324
 type: Request
 parentId: fld_f27b3e205c66481cb4ae235d0c94e271
-modified: 1651865575948
+modified: 1652470274312
 created: 1651602111610
-url: "{{ _.web }}/services/service-print-pay/{% response 'body',
-  'req_a3ea1bc2716943bfa75ae162eb311b4e', 'b64::JC5kYXRhLnNsdWc=::46b', 'never',
-  60 %}"
+url: "{{ _.web }}/services/service-print-pay/4550002"
 name: PRINT Pay Service
 description: ""
 method: GET

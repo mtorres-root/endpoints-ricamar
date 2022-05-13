@@ -1,7 +1,7 @@
 _id: req_3651b6b345ce4217bcbb9f2afcf7f31a
 type: Request
 parentId: fld_e97bf5e874864cdea462884c2d95780d
-modified: 1652390676093
+modified: 1652461974780
 created: 1647015926775
 url: "{{ _.api }}/auth/authorize-box"
 name: Auth Box
@@ -36,7 +36,7 @@ body:
     {
     	"branch_office_id": "{% response 'body', 'req_67f048a46f504361afc89f8a97242c4e', 'b64::JC5kYXRhLmJyYW5jaEJveGVzWzBdLmJyYW5jaF9vZmZpY2VfaWQ=::46b', 'never', 60 %}",
     	"branch_box_id":  "{% response 'body', 'req_67f048a46f504361afc89f8a97242c4e', 'b64::JC5kYXRhLmJyYW5jaEJveGVzWzBdLmlk::46b', 'never', 60 %}",
-    	"username": "supervisor@rapidmoney.com",
+    	"username": "eaguilar@rapidmoney.com",
     	"password": "{% hash 'sha1', 'hex', 'password' %}"
     }
 parameters: []

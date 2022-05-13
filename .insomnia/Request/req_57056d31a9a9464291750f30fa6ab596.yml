@@ -1,7 +1,7 @@
 _id: req_57056d31a9a9464291750f30fa6ab596
 type: Request
 parentId: fld_c8b71793d658474bb3d6feea11cecfe0
-modified: 1651676232246
+modified: 1652474767831
 created: 1650908550492
 url: "{{ _.api }}/supervisor/apply-arching"
 name: Apply Arching
@@ -13,7 +13,11 @@ body:
     {
     	"branch_office_id": "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9vZmZpY2VfaWQ=::46b', 'never', 60 %}",
     	"branch_box_id":  "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9ib3hfaWQ=::46b', 'never', 60 %}",
-    	"date": ""
+    	"date": "",
+    	"missing_amount": "{% response 'body', 'req_7ec489dd2389464a889cf1f40ea83350', 'b64::JC5kYXRhLm1pc3NpbmdfYW1vdW50::46b', 'never', 60 %}",
+    	"spare_amount": "{% response 'body', 'req_7ec489dd2389464a889cf1f40ea83350', 'b64::JC5kYXRhLnNwYXJlX2Ftb3VudA==::46b', 'never', 60 %}",
+    	"total_currency": "{% response 'body', 'req_7ec489dd2389464a889cf1f40ea83350', 'b64::JC5kYXRhLnRvdGFsX2N1cnJlbmN5::46b', 'never', 60 %}",
+    	"complement": "{% response 'body', 'req_7ec489dd2389464a889cf1f40ea83350', 'b64::JC5kYXRh::46b', 'never', 60 %}"
     }
 parameters: []
 headers:

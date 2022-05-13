@@ -1,7 +1,7 @@
 _id: req_82df998599184b16932ee4f9e7fddc11
 type: Request
 parentId: fld_1cb27179563c4b2498e7fd463527eb30
-modified: 1652448438343
+modified: 1652474560756
 created: 1652447772206
 url: "{{ _.api }}/supervisor/all-currency"
 name: List Currency Template
