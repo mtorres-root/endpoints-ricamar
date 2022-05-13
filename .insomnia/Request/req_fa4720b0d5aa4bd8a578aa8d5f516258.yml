@@ -1,7 +1,7 @@
 _id: req_fa4720b0d5aa4bd8a578aa8d5f516258
 type: Request
 parentId: fld_f27b3e205c66481cb4ae235d0c94e271
-modified: 1651675878778
+modified: 1652389565332
 created: 1648044191017
 url: "{{ _.api }}/services/service-balance"
 name: Calculate Balance to Pay
@@ -13,7 +13,7 @@ body:
     {
     	"service_id": "{% response 'body', 'req_a348e5a04d394d15a26c3af9ae4a749b', 'b64::JC5kYXRhWzBdLmlk::46b', 'never', 60 %}",
     	"option_selected": "saldo-total",
-    	"amount_received": 47.01
+    	"amount_received": 100
     }
 parameters: []
 headers:

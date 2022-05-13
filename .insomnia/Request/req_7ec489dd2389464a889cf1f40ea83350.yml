@@ -1,9 +1,9 @@
-_id: req_57056d31a9a9464291750f30fa6ab596
+_id: req_7ec489dd2389464a889cf1f40ea83350
 type: Request
-parentId: fld_c8b71793d658474bb3d6feea11cecfe0
-modified: 1651676232246
-created: 1650908550492
-url: "{{ _.api }}/supervisor/apply-arching"
+parentId: fld_1cb27179563c4b2498e7fd463527eb30
+modified: 1652448405124
+created: 1652447772224
+url: "{{ _.api }}/supervisor/calculate-currency"
 name: Apply Arching
 description: ""
 method: POST
@@ -13,7 +13,52 @@ body:
     {
     	"branch_office_id": "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9vZmZpY2VfaWQ=::46b', 'never', 60 %}",
     	"branch_box_id":  "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9ib3hfaWQ=::46b', 'never', 60 %}",
-    	"date": ""
+    	"currencies":  [
+    		{
+    			"id": 0.01,
+    			"quantity": 4
+    		},
+    		{
+    			"id": 0.05,
+    			"quantity": 1
+    		},
+    		{
+    			"id": 0.1,
+    			"quantity": 1
+    		},
+    		{
+    			"id": 0.25,
+    			"quantity": 1
+    		},
+    		{
+    			"id": 0.5,
+    			"quantity": 1
+    		},
+    		{
+    			"id": 1,
+    			"quantity": 0
+    		},
+    		{
+    			"id": 5,
+    			"quantity": 0
+    		},
+    		{
+    			"id": 10,
+    			"quantity": 2
+    		},
+    		{
+    			"id": 20,
+    			"quantity": 1
+    		},
+    		{
+    			"id": 50,
+    			"quantity": 1
+    		},
+    		{
+    			"id": 100,
+    			"quantity": 0
+    		}
+    	]
     }
 parameters: []
 headers:

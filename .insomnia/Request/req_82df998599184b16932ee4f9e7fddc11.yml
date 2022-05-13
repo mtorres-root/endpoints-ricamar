@@ -1,10 +1,10 @@
-_id: req_57f1759994cb43829a5b5eec7ae80e93
+_id: req_82df998599184b16932ee4f9e7fddc11
 type: Request
-parentId: fld_7bacbe1e67a143ea9c5f42bc239a8ed9
-modified: 1652110003784
-created: 1651510005168
-url: "{{ _.api }}/supervisor/all-filter"
-name: Filters
+parentId: fld_1cb27179563c4b2498e7fd463527eb30
+modified: 1652447954775
+created: 1652447772206
+url: "{{ _.api }}/supervisor/all-currency"
+name: List Arching
 description: ""
 method: GET
 body: {}
@@ -14,7 +14,7 @@ authentication:
   type: bearer
   token: "{% response 'body', 'req_43bf7094f38044eeb02c8e227e69e5eb',
     'b64::JC5kYXRhLnRva2VuLmFjY2Vzc190b2tlbg==::46b', 'never', 60 %}"
-metaSortKey: -1651088461019
+metaSortKey: -1650908542810
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
