@@ -1,10 +1,10 @@
-_id: req_8e6d5bf146eb4aeb8014b87e1ea07404
+_id: req_bd7f1f0fc05c4232a985f459eaddf4f2
 type: Request
 parentId: fld_9f1db351020f479bb28ccddc63788878
-modified: 1653339250987
-created: 1644589753418
-url: "{{ _.api }}/auth/login"
-name: Login
+modified: 1653339774242
+created: 1653339319608
+url: "{{ _.api }}/auth/recovery-password"
+name: Update Password
 description: |-
   Response 
 
@@ -32,11 +32,12 @@ description: |-
 method: POST
 body:
   mimeType: application/json
-  text: >-
+  text: |-
     {
     	"username": "sdadsaad-asdadm",
-    	"password": "{% hash 'sha1', 'hex', 'pnXsAOxp' %}",
-    	"branch_box_auth_id": "{% response 'body', 'req_3651b6b345ce4217bcbb9f2afcf7f31a', 'b64::JC5kYXRhLmJyYW5jaF9ib3hfYXV0aF9pZA==::46b', 'never', 60 %}"
+    	"old_password": "{% hash 'sha1', 'hex', 'pnXsAOxp' %}",
+    	"password": "{% hash 'sha1', 'hex', '123456' %}",
+    	"password_confirmation": "{% hash 'sha1', 'hex', '123456' %}"
     }
 parameters: []
 headers:
@@ -44,7 +45,7 @@ headers:
     value: application/json
     id: pair_aaf6add80c194099bc6a5e32d9c2efa2
 authentication: {}
-metaSortKey: -1644606393535
+metaSortKey: -1644293602392.5
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

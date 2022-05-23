@@ -1,7 +1,7 @@
 _id: req_d0b880742b90459797a85862ed5f505d
 type: Request
 parentId: fld_e97bf5e874864cdea462884c2d95780d
-modified: 1652469076097
+modified: 1653339187598
 created: 1646749853028
 url: "{{ _.api }}/setting/auth"
 name: Auth - Override info
@@ -11,8 +11,8 @@ body:
   mimeType: application/json
   text: |-
     {
-    	"username": "rapidmoney@ricamar.com",
-    	"password": "{% hash 'sha1', 'hex', 'password' %}"
+    	"username": "supervisor-rapidmoney",
+    	"password": "{% hash 'sha1', 'hex', 'Zopl5OX6' %}"
     }
 parameters: []
 headers:
